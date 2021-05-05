@@ -37,14 +37,14 @@ if __name__ == '__main__':
     ws = perceptronLearning(data, alpha=0.1)
 
     predictions = []
-    
+
     for x in range(data.shape[0]):
             inputs = np.array(data.iloc[x,:-1])
             a = np.array(inputs)
             predictions.append(1 * (np.sum(a*ws) > 0))
 
 
-    print(f"\nWeights for perceptron learning: {ws}\n")
+    print(f"\nWeights for perceptron learning: {np.array(ws)}\n")
     print(f"Training data true Y          : {np.array(data['out'])}")
     print(f"Predicted Y for trainging data: {np.array(predictions)}\n")
 

@@ -50,7 +50,7 @@ def trainAndValidate(splits):
         print(f"Accuracy for current split: {accuracy}")
 
         overallAcc = overallAcc + (accuracy * 1/len(splits))
-    print(f"Average accuracy fo all splits: {overallAcc}")
+    print(f"Average accuracy fo all splits: {overallAcc}\n")
 
 if __name__ == '__main__':
     wine, wineAttr = getARFFData('wine.arff')
