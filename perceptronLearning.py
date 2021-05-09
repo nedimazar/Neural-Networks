@@ -1,13 +1,13 @@
 import numpy as np
 import pandas as pd
 
-def getOutput(inputs, ws):
-    out = sum([a * b for a, b in zip(inputs, ws)])
+def getOutput(inputs, ws, bias):
+    out = sum([a * b for a, b in zip(inputs, ws)]) + bias
     return out > 0 
 
-def perceptronLearning(data, alpha):
+def perceptronLearning(data, alpha, bias):
     # Initializing each weight to  a random number
-    ws = [np.random.random() for x in range(data.shape[1]-1)]
+    ws = [np.random.random() - 0.5 for x in range(data.shape[1]-1)]
     
     # Repeat to convergence
     while True:
@@ -19,7 +19,7 @@ def perceptronLearning(data, alpha):
             expected = np.array(data.iloc[x, -1])
 
             # Computing the output with the current weights
-            actual = getOutput(inputs, ws)
+            actual = getOutput(inputs, ws, bias)
 
             # Getting the error
             error = expected - actual
@@ -34,7 +34,7 @@ def perceptronLearning(data, alpha):
 
 if __name__ == '__main__':
     data = pd.read_csv('data.csv')
-    ws = perceptronLearning(data, alpha=0.1)
+    ws = perceptronLearning(data, alpha=0.1, bias=0.0)
 
     predictions = []
 
