@@ -2,6 +2,8 @@
 
 #### Due Monday, May 17, 11:59pm.
 
+## Run `runner.sh' for questions 1 and 3. Notebooks `Tensorflow`, `CNN` and `Image Recognition` are for question 2. Written part for question 2 is in PDF document `Question 2`.
+
 100 points.
 
 Question 1. (33%) Distance-based k-nearest neighbor. For this question, you'll implement k-Nearest Neighbor, using distance weighting, and test its performance on two datasets I've provided.
