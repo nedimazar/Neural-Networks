@@ -2,7 +2,7 @@
 
 #### Due Monday, May 17, 11:59pm.
 
-## Run `runner.sh' for questions 1 and 3. Notebooks `Tensorflow`, `CNN` and `Image Recognition` are for question 2. Written part for question 2 is in PDF document `Question 2`.
+## Run `runner.sh` for questions 1 and 3. Notebooks `Tensorflow`, `CNN` and `Image Recognition` are for question 2. Written part for question 2 is in PDF document `Question 2`.
 
 100 points.
 
