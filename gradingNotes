@@ -1,0 +1,12 @@
+
+#1 KNN:  33/33
+
+#2 TensorFlow:  32/33
+Reducing the size of the convolutional layers actually lets us identify *higher* level features.
+
+#3 Perceptron:  33/33
+
+99/100
+
+
+
